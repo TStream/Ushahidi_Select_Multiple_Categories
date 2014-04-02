@@ -1,0 +1,3 @@
+<?php defined('SYSPATH') or die('No direct script access.'); ?>
+
+2014-03-28 19:21:25 +00:00 --- error: Uncaught Kohana_Database_Exception: Database error: Duplicate entry '1kr294qbjpn72jqvsll58me4u4' for key 'PRIMARY' - INSERT INTO `sessions` (`session_id`, `last_activity`, `data`) VALUES ('1kr294qbjpn72jqvsll58me4u4', 1396034485, 'jTLqkGkLg8uX9VIRyqW0Nt0fKqm7y3XNPuTBwjSYvFpp1o9PPgO3U+ze4+q7lPRDv6hk63alK4gtZjppG1Rx6t/UIac9GKCNZG5LPIs/RXa8wzzYUmd1R8/r5M4diMMHw6SdWcBjwG7iIr6S1DiNJATfdl0kNIv8NsyrcCKDeO3gNNAp4wx8vIvqFuU7moovd14rrekIWSk4EhKDgm+CEi/ndZ6Fs7WzdBEwcRqUh2XM5M+wqk3GecCwp3QIoPqwvcNetFWw82bXMCyS/Rt5i0/MQK87LEUIoabH+0ixQ7oGgTTJMbNhc+mAeZ0YoPa5eKcmbJPKdc93tI1PVCdxy0MjVHAm1OdNAaWIMfm4qeHknA==') in file system/libraries/drivers/Database/Mysqli.php on line 159

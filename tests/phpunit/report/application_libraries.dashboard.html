@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>libraries</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="highcharts.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+          var classCoverageDistribution = new Highcharts.Chart({
+             chart: {
+                renderTo: 'classCoverageDistribution',
+                type: 'column'
+             },
+             title: {text: ''},
+             legend: {enabled: false},
+             credits: {enabled: false},
+             tooltip: {enabled: false},
+             xAxis: {
+                 labels: {style: {fontSize: '8px'}},
+                 categories: [
+                 '0%','0-10%','10-20%','20-30%','30-40%','40-50%','50-60%','60-70%','70-80%','80-90%','90-100%','100%'
+                 ]
+            },
+            yAxis: {
+                title: '',
+                labels: {style: {fontSize: '8px'}},
+            },
+            series: [{
+                data: [12,3,2,0,0,3,4,3,3,2,0,2]
+            }],
+          });
+
+        var classComplexity = new Highcharts.Chart({
+            chart: {
+              renderTo: 'classComplexity',
+              type: 'scatter'
+            },
+            title: {text: ''},
+            legend: {enabled: false},
+            credits: {enabled: false},
+            xAxis: {
+               labels: {enabled: false},
+            },
+            yAxis: {
+              title: '',
+              labels: {enabled: false},
+            },
+            tooltip: {
+                formatter: function() {
+                    return this.point.config[2];
+                }
+            },
+            series: [{
+              data: [[55.940594059406,59,"<a href=\"application_libraries_Api_Service.php.html#29\">Api_Service<\/a>"],[68.421052631579,11,"<a href=\"application_libraries_HttpClient.php.html#11\">HttpClient_Core<\/a>"],[17.228464419476,235,"<a href=\"application_libraries_IDNA_convert.php.html#54\">IDNA_convert<\/a>"],[44.444444444444,82,"<a href=\"application_libraries_JSMin.php.html#49\">JSMin<\/a>"],[100,0,"<a href=\"application_libraries_JSMin.php.html#385\">JSMinException<\/a>"],[87.096774193548,15,"<a href=\"application_libraries_MY_Auth.php.html#10\">Auth<\/a>"],[75.862068965517,7,"<a href=\"application_libraries_MY_Controller.php.html#18\">Controller<\/a>"],[100,2,"<a href=\"application_libraries_MY_Database.php.html#12\">Database<\/a>"],[8.5106382978723,29,"<a href=\"application_libraries_Requirements.php.html#30\">Requirements<\/a>"],[60.230547550432,136,"<a href=\"application_libraries_Requirements.php.html#324\">Requirements_Backend<\/a>"],[0,75,"<a href=\"application_libraries_Themes.php.html#17\">Themes_Core<\/a>"],[59.22619047619,145,"<a href=\"application_libraries_Validation.php.html#12\">Validation_Core<\/a>"],[17.43119266055,40,"<a href=\"application_libraries_WKT.php.html#16\">WKT<\/a>"],[0,5,"<a href=\"application_libraries_WKT.php.html#273\">Geometry<\/a>"],[0,11,"<a href=\"application_libraries_WKT.php.html#323\">Collection<\/a>"],[0,3,"<a href=\"application_libraries_WKT.php.html#398\">GeometryCollection<\/a>"],[0,6,"<a href=\"application_libraries_WKT.php.html#433\">Point<\/a>"],[0,2,"<a href=\"application_libraries_WKT.php.html#485\">LineString<\/a>"],[0,2,"<a href=\"application_libraries_WKT.php.html#507\">LinearRing<\/a>"],[0,2,"<a href=\"application_libraries_WKT.php.html#529\">Polygon<\/a>"],[0,1,"<a href=\"application_libraries_WKT.php.html#557\">MultiPoint<\/a>"],[0,1,"<a href=\"application_libraries_WKT.php.html#572\">MultiLineString<\/a>"],[0,1,"<a href=\"application_libraries_WKT.php.html#587\">MultiPolygon<\/a>"],[55.038759689922,41,"<a href=\"application_libraries_api_Api_Object.php.html#16\">Api_Object_Core<\/a>"],[3.7037037037037,48,"<a href=\"application_libraries_api_MY_Admin_Category_Api_Object.php.html#18\">Admin_Category_Api_Object<\/a>"],[2.5,47,"<a href=\"application_libraries_api_MY_Admin_Reports_Api_Object.php.html#20\">Admin_Reports_Api_Object<\/a>"],[80,21,"<a href=\"application_libraries_api_MY_Countries_Api_Object.php.html#18\">Countries_Api_Object<\/a>"],[45.454545454545,106,"<a href=\"application_libraries_api_MY_Incidents_Api_Object.php.html#20\">Incidents_Api_Object<\/a>"],[73.333333333333,15,"<a href=\"application_libraries_api_MY_Locations_Api_Object.php.html#18\">Locations_Api_Object<\/a>"],[73.333333333333,10,"<a href=\"application_libraries_api_MY_Report_Api_Object.php.html#17\">Report_Api_Object<\/a>"],[57.723577235772,60,"<a href=\"application_libraries_drivers_Database.php.html#13\">Database_Driver<\/a>"],[65.217391304348,20,"<a href=\"application_libraries_drivers_Database.php.html#481\">Database_Result<\/a>"],[47.770700636943,66,"<a href=\"application_libraries_drivers_Database_Mysql.php.html#13\">Database_Mysql_Driver<\/a>"],[0,31,"<a href=\"application_libraries_drivers_Database_Mysql.php.html#344\">Mysql_Result<\/a>"]],
+              marker: {
+                  symbol: 'diamond'
+              }
+            }],
+        });
+    });
+    </script>
+  </head>
+
+  <body>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr><td class="title">libraries</td></tr>
+      <tr><td><div align="center"><p><a href="application_libraries.html">Back to Code Coverage report</a></p></div></td></tr>
+      <tr><td class="ruler"><img src="glass.png" width="3" height="3" alt=""></td></tr>
+    </table>
+
+    <br />
+
+    <center>
+      <table width="90%" cellpadding="2" cellspacing="1" border="0">
+        <tr>
+          <td valign="top">
+            <h2>Class Coverage Distribution</h2>
+            <div id="classCoverageDistribution"></div>
+          </td>
+
+          <td valign="top">
+            <h2>Class Complexity</h2>
+            <div id="classComplexity"></div>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <h2>Top Project Risks</h2>
+            <ul>
+              <li><a href="application_libraries_IDNA_convert.php.html#54">IDNA_convert</a> (31551)</li>
+              <li><a href="application_libraries_Themes.php.html#17">Themes_Core</a> (5700)</li>
+              <li><a href="application_libraries_api_MY_Admin_Category_Api_Object.php.html#18">Admin_Category_Api_Object</a> (2105)</li>
+              <li><a href="application_libraries_api_MY_Admin_Reports_Api_Object.php.html#20">Admin_Reports_Api_Object</a> (2094)</li>
+              <li><a href="application_libraries_api_MY_Incidents_Api_Object.php.html#20">Incidents_Api_Object</a> (1929)</li>
+              <li><a href="application_libraries_Validation.php.html#12">Validation_Core</a> (1570)</li>
+              <li><a href="application_libraries_Requirements.php.html#324">Requirements_Backend</a> (1299)</li>
+              <li><a href="application_libraries_JSMin.php.html#49">JSMin</a> (1234)</li>
+              <li><a href="application_libraries_drivers_Database_Mysql.php.html#344">Mysql_Result</a> (992)</li>
+              <li><a href="application_libraries_WKT.php.html#16">WKT</a> (940)</li>
+
+            </ul>
+          </td>
+
+          <td valign="top">
+            <h2>Least Tested Methods</h2>
+            <ul>
+              <li><a href="application_libraries_WKT.php.html#60">WKT::parse</a> (0%)</li>
+              <li><a href="application_libraries_WKT.php.html#131">WKT::pregExplode</a> (0%)</li>
+              <li><a href="application_libraries_WKT.php.html#145">WKT::write</a> (0%)</li>
+              <li><a href="application_libraries_WKT.php.html#164">WKT::extract</a> (0%)</li>
+              <li><a href="application_libraries_WKT.php.html#42">WKT::read</a> (0%)</li>
+              <li><a href="application_libraries_Validation.php.html#854">Validation_Core::chars</a> (0%)</li>
+              <li><a href="application_libraries_drivers_Database.php.html#575">Database_Result::offsetGet</a> (0%)</li>
+              <li><a href="application_libraries_Validation.php.html#691">Validation_Core::message</a> (0%)</li>
+              <li><a href="application_libraries_drivers_Database.php.html#470">Database_Driver::query_hash</a> (0%)</li>
+              <li><a href="application_libraries_Validation.php.html#836">Validation_Core::depends_on</a> (0%)</li>
+
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </center>
+
+    <br />
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr><td class="ruler"><img src="glass.png" width="3" height="3" alt=""></td></tr>
+      <tr><td class="versionInfo">Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.1.1</a> using <a href="http://www.php.net/" target="_top">PHP 5.3.10</a> and PHPUnit 3.6.10 at Wed Apr 2 17:16:34 UTC 2014.</td></tr>
+    </table>
+
+    <br/>
+  </body>
+</html>
