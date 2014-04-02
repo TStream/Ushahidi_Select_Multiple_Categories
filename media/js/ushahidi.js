@@ -110,20 +110,6 @@
 							return "0px";
 						}
 						else {
-							/*feature_count = feature.attributes.count;
-							if (feature_count > 1000) {
-								return "20px";
-							} else if (feature_count > 500) {
-								return "18px";
-							} else if (feature_count > 100) {
-								return "14px";
-							} else if (feature_count > 10) {
-								return "12px";
-							} else if (feature_count >= 2) {
-								return "10px";
-							} else {
-								return "";
-							}*/
 							return "0px"; // Don't show numbers on cluster becasue it gets crowed when mulitple categories are selected
 						}
 						
@@ -144,69 +130,69 @@
 						    feature_count = feature.attributes.count;
 							if (feature_count > 10000)
 							{
-								return Ushahidi.markerRadius * 17; // originally 17
+								return Ushahidi.markerRadius * 17; 
 							}
 							else if (feature_count > 5000)
 							{
-								return Ushahidi.markerRadius * 10;// originally 10
+								return Ushahidi.markerRadius * 10;
 							}
 							else if (feature_count > 1000)
 							{
-								return Ushahidi.markerRadius * 8;// originally 8
+								return Ushahidi.markerRadius * 8;
 							}
 							else if (feature_count > 500)
 							{
-								return Ushahidi.markerRadius * 7;// originally 7
+								return Ushahidi.markerRadius * 7;
 							}
 							else if (feature_count > 100)
 							{
-								return Ushahidi.markerRadius * 6;// originally 6
+								return Ushahidi.markerRadius * 6;
 							}
 							else if (feature_count > 10)
 							{
-								return Ushahidi.markerRadius * 5;// originally 5
+								return Ushahidi.markerRadius * 5;
 							}
 							else if (feature_count >= 2)
 							{
-								return Ushahidi.markerRadius * 3;// originally 3
+								return Ushahidi.markerRadius * 3;
 							}
 							else
 							{
-								return Ushahidi.markerRadius * 2;// originally 2
+								return Ushahidi.markerRadius * 2;
 							}
 						} else {
 							feature_count = feature.attributes.count;
 							if (feature_count > 10000)
 							{
-								return Ushahidi.markerRadius * 1; // originally 17
+								return Ushahidi.markerRadius * 1; 
 							}
 							else if (feature_count > 5000)
 							{
-								return Ushahidi.markerRadius * 1;// originally 10
+								return Ushahidi.markerRadius * 1;
 							}
 							else if (feature_count > 1000)
 							{
-								return Ushahidi.markerRadius * 1;// originally 8
+								return Ushahidi.markerRadius * 1;
 							}
 							else if (feature_count > 500)
 							{
-								return Ushahidi.markerRadius * 1;// originally 7
+								return Ushahidi.markerRadius * 1;
 							}
 							else if (feature_count > 100)
 							{
-								return Ushahidi.markerRadius * 1;// originally 6
+								return Ushahidi.markerRadius * 1;
 							}
 							else if (feature_count > 10)
 							{
-								return Ushahidi.markerRadius * 1;// originally 5
+								return Ushahidi.markerRadius * 1;
 							}
 							else if (feature_count >= 2)
 							{
-								return Ushahidi.markerRadius * 1;// originally 3
+								return Ushahidi.markerRadius * 1;
 							}
 							else
 							{
-								return Ushahidi.markerRadius * 1;// originally 2
+								return Ushahidi.markerRadius * 1;
 							}
 						}
 					},
@@ -221,31 +207,31 @@
 							feature_count = feature.attributes.count;
 							if (feature_count > 10000)
 							{
-								return 225;// originally 45
+								return 225;
 							}
 							else if (feature_count > 5000)
 							{
-								return 150;// originally 30
+								return 150;
 							}
 							else if (feature_count > 1000)
 							{
-								return 110;// originally 22
+								return 110;
 							}
 							else if (feature_count > 100)
 							{
-								return 75;// originally 15
+								return 75;
 							}
 							else if (feature_count > 10)
 							{
-								return 50;// originally 10
+								return 50;
 							}
 							else if (feature_count >= 2)
 							{
-								return 25;// originally 5
+								return 25;
 							}
 							else
 							{
-								return 1;// originally 1
+								return 1;
 							}
 						}
 						
@@ -297,7 +283,7 @@
 						}
 						else
 						{
-							return "1"; //Ushahidi.markerOpacity;
+							return "1"; 
 						}
 					},
 					strokeOpacity: function(feature) {
@@ -308,7 +294,7 @@
 						}
 						else
 						{
-							return "1"; //Ushahidi.markerStrokeOpacity;
+							return "1";
 						}
 					},
 					labelalign: function(feature) {

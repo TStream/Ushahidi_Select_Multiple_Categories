@@ -83,7 +83,7 @@ class Json_Controller extends Template_Controller {
 	protected function geojson($type)
 	{
 		$color = Kohana::config('settings.default_map_all');
-		$icon = "media/img/openlayers/Zombie.png";
+		$icon = "";
 		//$markers = FALSE; // Moved to inside the foreach loop (TB)
 	    $feature_array = array();
 		
