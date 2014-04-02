@@ -1,9 +1,10 @@
-The only difference between this and the original Ushahidi_Web is the added ability to select mulitple categories.
-the files that were changed are as follows:
+The differences between this and the original Ushahidi_Web is the added ability to select mulitple categories and the markers have more of a target look.
+The files that were changed are as follows:
 
     application/controllers/json.php -> the geojson function was modified
     application/helpers/reports.php -> the fetch_incidents function was modified
-    themes/default/views/main/main_js.php -> the // Category Switch Action was modified
+    themes/default/views/main/main_js.php -> the Category Switch Action was modified
+    media/js/ushahidi.js -> pointRadius, fillOpacity, strokeWidth, and strokeOpacity were modified
     
 Below is information on using Ushahidi 
 

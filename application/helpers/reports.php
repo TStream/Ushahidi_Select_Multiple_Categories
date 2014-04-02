@@ -762,7 +762,7 @@ class reports_Core {
 					$category_ids[] = intval($c_id);
 				}
 			}
-			error_log(print_r("Reports Cat ID: " . $cat_id,true));
+			
 			// Check if there are any category ids
 			if (count($category_ids) > 0)
 			{
