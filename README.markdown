@@ -1,3 +1,12 @@
+The only difference between this and the original Ushahidi_Web is the added ability to select mulitple categories.
+the files that were changed are as followed:
+    application/controllers/json.php -> the geojson function was modified
+    application/helpers/reports.php -> the fetch_incidents function was modified
+    themes/default/views/main/main_js.php -> the // Category Switch Action was modified
+    
+Below is information on using Ushahidi 
+
+
 Ushahidi Platform
 =================
 The Ushahidi Platform is an open source web application for information collection, vizualisation and interactive 
