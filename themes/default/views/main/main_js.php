@@ -253,6 +253,7 @@ jQuery(function() {
                     if (!$("#cat_" + childrenId).hasClass("active"))
 		            {
 		                count++;
+		                console.log(count);
 		            }		            
                 }
                 if (count == children.length)
@@ -266,6 +267,7 @@ jQuery(function() {
 		// if not active activate(add Highlight)
 		else
 		{
+		
 		    // if All category is selected than remove active from all other categories and hide all childern
 		    if (categoryId == 0 )
 		    {
@@ -285,6 +287,8 @@ jQuery(function() {
 		    // Show children DIV 
 		    $("#child_" + categoryId).show();
 		    $(this).parents("div").show(); 
+		    
+		    
 		    var id = "cat_" + categoryId;
 		    var cid = "child_" + categoryId;
 		    
@@ -330,6 +334,44 @@ jQuery(function() {
 		            $("#cat_" + parentId).removeClass("active");
 		        }		        
 		    }
+		    
+		   //If all children are selected deactivate all children and than activate parent
+		   var pid = "cat_" + categoryId;
+		   var aparentId = document.getElementById(pid).parentNode.parentNode.parentNode.id.substring(6);
+		   if (aparentId > 0){
+		        var pcid = "child_" + aparentId;		        
+		        var children = document.getElementById(pcid).firstChild.childNodes;		        
+		        for (var i = 0; i < children.length ; i++){
+                    var childrenId = children[i].firstChild.id.substring(4);
+                    if ($("#cat_" + childrenId).hasClass("active"))
+		            {
+		                count++;
+		               
+		            }		            
+                }
+                if (count == children.length)
+                {
+                   for (var i = 0; i < children.length ; i++){
+                        var childId = children[i].firstChild.id.substring(4);
+                        if ($("#cat_" + childId).hasClass("active"))
+		                {
+		                    var index = idArray.indexOf(childId);
+		                    if (index > -1) // remove category from idArray
+		                    {
+		                        idArray.splice(index, 1);
+		                    }
+		                    $("#cat_" + childId).removeClass("active");
+		                }
+		            
+                    }
+                    $("#cat_" + aparentId).addClass("active");
+                    idArray.push(aparentId);
+                }
+		    }
+		    
+		    
+		    
+		    
    	
 		}
 
